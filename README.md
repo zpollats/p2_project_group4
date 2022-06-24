@@ -2,14 +2,14 @@
 Authors: John Sheehan, Yue Yu, Zach Pollatsek
 
 ## Overview
-Fogo de Chao is a high-end restaurant chain that has found success all across the United States. 
+Fogo de Chao is a high-end restaurant chain that has found success all across the United States. High-end restaurants tend to perform better when located in neighborhoods/city areas that are in close proximity to higher priced neighborhoods. Fogo de Chao has one location in Bellevue, WA, and the restaurant group has seen tremendous success here. 
 
 ## Business Problem
-Movie production has significant up-front costs that will require internal stakeholder support to adequately fund new projects. Further, it will be important to generate engagement with Microsoft's titles both to maximize return on investment and to legitimize Microsoft as a content producer in the future. Therefore, this analysis aims to generate recommendations on how best to deploy the content production budget. 
+Fogo de Chao has tasked us with finding the best possible location in the Seattle area for their second restaurant in the state of Washington. Specifically, Fogo de Chao wants to know which zip codes a new restaurant could be located in order to optimize success. The restaurant group wants to ensure that the new location will be in close proximity to those who are comfortable paying for a high-end dining experience. 
 
-We will use data from IMDB, The Numbers and The Movie Database to determine answers to the following questions:
+We will use housing data from King County government to determine answers to the following questions:
 
-- What genres of movie are likely to optimize return on investment?
+- What neighborhood
 
 - What is the relationship between movie budget and expected gross revenue? 
 
