@@ -2,23 +2,23 @@
 Authors: John Sheehan, Yue Yu, Zach Pollatsek
 
 ## Overview
-Fogo de Chao is a high-end restaurant chain that has found success all across the United States. 
+Fogo de Chao is a high-end restaurant chain that has found success all across the United States. High-end restaurants tend to perform better when located in neighborhoods/city areas that are in close proximity to higher priced neighborhoods. Fogo de Chao has one location in Bellevue, WA, and the restaurant group has seen tremendous success here. 
 
 ## Business Problem
-Movie production has significant up-front costs that will require internal stakeholder support to adequately fund new projects. Further, it will be important to generate engagement with Microsoft's titles both to maximize return on investment and to legitimize Microsoft as a content producer in the future. Therefore, this analysis aims to generate recommendations on how best to deploy the content production budget. 
+Fogo de Chao has tasked us with finding the best possible location in the Seattle area for their second restaurant in the state of Washington. Specifically, Fogo de Chao wants to know which zip codes a new restaurant could be located in order to optimize success. The restaurant group wants to ensure that the new location will be in close proximity to those who are comfortable paying for a high-end dining experience. 
 
-We will use data from IMDB, The Numbers and The Movie Database to determine answers to the following questions:
+We will use housing data from King County government to determine answers to the following questions:
 
-- What genres of movie are likely to optimize return on investment?
+- Which neighborhood(s) has/have the highest priced homes on average?
 
-- What is the relationship between movie budget and expected gross revenue? 
+- Does location influence a house's listing price?
 
-- What season/month should we target releases in order to optimize our return on investment?
+- Do quality and size of house influence a house's listing price?
 
 
 ## Data
 
-[IMDB](https://IMDB.com) is the largest, most comprehensive movie database publicly available on the web. [The Numbers](https://www.the-numbers.com/) is a trusted resource for movie business information including movie budget, performance and various revenue categories. The data files analyzed herein provide movie titles, genre tags and release date, as well as financial characteristics such as worldwide gross revenue and production budget.
+[King County Government](https://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r) has data on all homes within the county from 2014-2015. The data files analyzed herein provide movie titles, genre tags and release date, as well as financial characteristics such as worldwide gross revenue and production budget.
 
 ## Methods
 
