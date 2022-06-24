@@ -54,9 +54,9 @@ See the full analysis in the [Jupyter Notebook](KC_Housing_Final_Notebook.ipynb)
 
 For additional info, contact John Sheehan, Yue, Yu, or Zach Pollatsek as follows:
 
-- Ogo:    ogo.ndugba@gmail.com 
+- John:   JohnJsheehan8@gmail.com 
+- Yue:    yuyue772@gmail.com
 - Zach:   zacharypollatsek@gmail.com
-- Tom:    thomas.h.chapman@gmail.com
 
 ## Repository Contents
 - data
