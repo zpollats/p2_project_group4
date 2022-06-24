@@ -9,54 +9,50 @@ Fogo de Chao has tasked us with finding the best possible location in the Seattl
 
 We will use housing data from King County government to determine answers to the following questions:
 
-- Which neighborhood(s) has/have the highest priced homes on average?
+- In which neighborhood should Fogo de Chao open a new restaurant to optimize their chance as success?
 
-- Does location influence a house's listing price?
+- Does the location of a home influence the price of that home?
 
-- Do quality and size of house influence a house's listing price?
+- Do the quality and size of a house influence its price?
 
 
 ## Data
 
-[King County Government](https://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r) has data on all homes within the county from 2014-2015. The data files analyzed herein provide movie titles, genre tags and release date, as well as financial characteristics such as worldwide gross revenue and production budget.
+[King County Government](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction) has provided housing data from 2014-2015 that can be found on Kaggle. The data file analyzed herein provides home prices, location data, quality data, and house/lot size data. There is also data for the views at a given home as well as whether or not the home has been renovated and when. 
 
 ## Methods
 
-This project uses descriptive analysis to provide an overview of the factors that go into executing a successful movie production and release. 
+This project uses multiple linear regression modeling to infer correlation between home price and all other characteristics within the data. We specifically used location data, house/lot size data, and quality of home data. 
 
 ## Results
 
-Movies with the Animation, Adventure or Sci-Fi tags generally produced the highest ROI. War and Western movies were the least profitable.
-![](images/MedianROI_genre.png)
+Our final model captures approximately 80% of the variance within home price. From our model, we can see that it does relatively well at infering home price based on the given inputs of location, size, and quality of home. 
+![](images/final_linear_regr.png)
 
 
-There is a strong correlation between production budget and return on investment.
-![](images/WorldwideGrossRevenueByProductionBudget.png)
+Of all zip codes, we found that 6 zip codes increased home price in our model. The Stevens/Madison Valley neighborhood (from this group of 6) has the highest average home price. 
+![](images/Pricezip.png)
 
-
-The data reveals that movies released in June, July, or November produce the highest return on investment.
-![](images/MedianROI_ReleaseMonth.png)
 
 
 ## Conclusions
 
-- **Movies in the animation, adventure and sci-fi genres tend to produce better return on investment than other genres.** As a result, we recommend prioritizing the creation of content that aligns with these genres. Avoid war and western-themed content as these tend to produce unfavorable ROI.
-- **Movies released in June, July and November tend to generate better return on investment than other months.** As a result, we recommend targeting new releases for the summer or November months.
-- **There is a strong correlation between movie production budget and return on investment.** Microsoft should direct its movie-making budget toward a relatively small number of projects in the above genres to avoid diluting ROI.
+- **We recommend opening a new Fogo de Chao location in the Stevens/Madison Valley neighborhood (98112).** There are 3 neighborhoods that we believe could be ideal for Fogo de Chao to open a new location: East Queen Anne/South Lake Union (98109), Stevens/Madison Valley (98112), and West Queen Anne/North Queen Anne (98119).
+- **Based on our model, if a home is in the 98112 zip code, the inferred home price increases by $107,000 with all else held constant.** 
 
 ## Next Steps
 
-Entering a new industry comes with significant startup costs. To help Microsoft produce an initial movie that is a blockbuster, we recommend the following additional analysis.
+Opening a new restaurant can be a risky endeavor, so if we are given more time to help Fogo de Chao, we would like to perform additional analysis:
 
-- Additional budgetary data to increase sample size and refine observations.
-- Identify replacement metrics to measure success where budget/revenue is unavailable.
-- Further analysis of the top grossing 50 movies of the past decade. Taking a more in depth look at what made these movies so financially successful.
+- Remove irrelevant zip codes that Fogo de Chao wouldn't enter due to space constraints, general disposition of neighborhood, etc. 
+- Perform more feature engineering on relevant input variables to improve our correlation and reduce total error of our model.
+- Remove latitude or longitude, as they are highly correlated to one another in a given city.
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook](MSFT_Movie_Analysis.ipynb) or review [this presentation](MSFT_Movie_Presentation.pdf).
+See the full analysis in the [Jupyter Notebook](KC_Housing_Final_Notebook.ipynb) or review [this presentation](FogodeChao_Seattle_Presentation.pdf).
 
-For additional info, contact Ogo Ndugba, Zach Pollatsek or Tom Chapman as follows:
+For additional info, contact John Sheehan, Yue, Yu, or Zach Pollatsek as follows:
 
 - Ogo:    ogo.ndugba@gmail.com 
 - Zach:   zacharypollatsek@gmail.com
@@ -65,8 +61,8 @@ For additional info, contact Ogo Ndugba, Zach Pollatsek or Tom Chapman as follow
 ## Repository Contents
 - data
 - images
-- working notebooks
+- Working Notebooks
 - .gitignore
 - README.md
-- MSFT_Movie_Presentation.pdf
-- MSFT_Movie_Analysis.ipynb
+- FogodeChao_Seattle_Presentation.pdf
+- KC_Housing_Final_Notebook.ipynb
